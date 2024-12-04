@@ -1,0 +1,151 @@
+---
+title: "Quarto Keyboard Shortcuts"
+subtitle: "STAT 184"
+date: "11/15/24"
+format: html
+editor: visual
+---
+
+In this worksheet, we will explore useful keyboard shorts for working with Quarto in RStudio. By learning these shortcuts, you can speed up your workflow and making it easier to navigate, edit, run code, and format your report.
+
+# Running and editing code chunks
+
+1.  Try the shortcut and describe what it does.
+
+    -   Windows/Linux: `Ctrl + Alt + I`
+
+    -   Mac: `Cmd + Option + I`
+
+        **This adds a code chunk**
+
+```{r}
+
+```
+
+2.  To run a specific line of code in the code chunk, highlight the line of code you want to run and use the shortcut,
+
+    -   Windows/Linux: `Ctrl + Enter`
+
+    -   Mac: `Cmd + Enter`
+
+        Create a code chunk and write few lines of code to try this shortcut.
+
+        **This run the code chunk**
+
+```{r}
+print("a")
+print("b")
+```
+
+3.  Create a new code chunk and use this following shortcut inside the code chunk. Describe what it does.
+    -   Windows/Linux: `Ctrl + Shift + C`
+
+    -   Mac: `Cmd + Shift + C`
+
+        **This adds the \# in the code chunk, making that line a comment**
+
+```{r}
+# 
+```
+
+4.  To run previous code chunks, use the shortcut,
+    -   Windows/Linux: `Ctrl + Alt + P`
+
+    -   Mac: `Cmd + Option + P`
+
+        Create two separate code chunks and run the first code chunk using the shortcut while being on the second code chunk. What happens when you use the shortcut in the first code chunk?
+
+        **When used at the first code chunk, it run itself. When used at the second code chunk, it run the previous code chunk.**
+
+```{r}
+x <- 1
+x
+```
+
+```{r}
+x <- 2
+x
+```
+
+5.  Create a code chunk with a keyboard shortcut, then use this new shortcut in the code chunk you created. Describe this shortcut.
+
+    -   Windows/Linux: `Alt + -`
+
+    -   Mac: `Option + -`
+
+        **This creates assignment \<-**
+
+    ```{r}
+    x <- 1
+    ```
+
+# Formatting and previewing documents
+
+When writing a report on Quarto, you can choose to style your text in different ways. You can set up the style using markdown shortcut. There are keyboard shortcuts to some of of the commands but they work in the visual mode.
+
+-   **Bold text**: `**Bold text**` (keyboard shortcut: `Cmd + B` (Mac), `Ctrl + B` (Windows))
+
+-   *Italic text*: `*Italic text*` (keyboard shortcut: `Cmd + I` (Mac), `Ctrl + I` (Windows))
+
+-   `Code`: `Code` (keyboard shortcut: `Cmd + D` (Mac), `Ctrl + D` (Windows))
+
+-   ~Subscript~: `~Subscript~`
+
+-   ^Superscript^: `^Superscript^`
+
+To create headers, we use the `#` sign. The number of `#` sign use will determine the type of header.
+
+# Heading 1
+
+```         
+-   Windows/Linux: `Alt + Control + 1`
+
+-   Mac: `Option + Cmd + 1`
+```
+
+## Heading 2
+
+```         
+-   Windows/Linux: `Alt + Control + 2`
+
+-   Mac: `Option + Cmd + 2`
+```
+
+### Heading 3
+
+```         
+-   Windows/Linux: `Alt + Control + 3`
+
+-   Mac: `Option + Cmd + 3`
+```
+
+You can create a list (bullet and ordered lists) with the following markdown shortcuts.
+
+-   Bullet list (`-`)
+
+1.  Ordered list (`1.`)
+
+Create a list of your favorite movies. Include a nested item for each movie's genre. (**Hint:** to create a nested item, use tab twice before using the markdown shortcut for the list)
+
+-   Movie 1
+
+    -   Movie 1 genre
+
+-   Movie 2
+
+    -   Movie 2 genre
+
+# Managing your console and output file
+
+1.  Try this shortcut and describe what it does.
+    -   Windows/Linux: `Ctrl +L`
+
+    -   Mac: `Control + L`
+
+        **This go to Console**
+2.  Try this shortcut and describe what it does.
+    -   Windows/Linux: `Shift + Ctrl + K`
+
+    -   Mac: `Shift + Cmd + K`
+
+        **This render the file**
